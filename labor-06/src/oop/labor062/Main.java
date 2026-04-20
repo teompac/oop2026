@@ -1,7 +1,8 @@
-package oop.labor04;
+package oop.labor062;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, Lab_04");
+
     }
+
 }

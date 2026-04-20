@@ -1,0 +1,43 @@
+package oop.labor03.lab3_1;
+
+import java.time.format.FormatStyle;
+
+public class Customer {
+    private String firstName;
+    private String lastName;
+    private BankAccount account;
+
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    public String getFirstName(){
+        return firstName;
+    }
+    public String getLastName(){
+        return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public BankAccount getAccount() {
+        return account;
+    }
+
+    public void setAccount(BankAccount account) {
+        this.account = account;
+    }
+    public void closeAccount(){
+        this.account=null;
+    }
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", account=" + account +
+                '}';
+    }
+}
+
